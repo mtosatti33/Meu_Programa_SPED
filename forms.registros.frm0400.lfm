@@ -1,0 +1,55 @@
+inherited frm0400: Tfrm0400
+  Left = 241
+  Height = 135
+  Top = 113
+  Width = 509
+  Caption = 'Registro 0400 - Naturezas de Operação'
+  ClientHeight = 135
+  ClientWidth = 509
+  inherited Panel1: TPanel
+    Height = 42
+    Width = 509
+    ClientHeight = 42
+    ClientWidth = 509
+  end
+  inherited grpDados: TGroupBox
+    Height = 93
+    Top = 42
+    ClientHeight = 73
+    ClientWidth = 597
+    object Label2: TLabel[0]
+      Left = 24
+      Height = 15
+      Top = 8
+      Width = 44
+      Caption = 'Cod Nat'
+    end
+    object edtCodNat: TEdit[1]
+      Left = 96
+      Height = 23
+      Top = 8
+      Width = 88
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object Label3: TLabel[2]
+      Left = 24
+      Height = 15
+      Top = 32
+      Width = 51
+      Caption = 'Descrição'
+    end
+    object edtDescrNat: TEdit[3]
+      Left = 96
+      Height = 23
+      Top = 32
+      Width = 392
+      ReadOnly = True
+      TabOrder = 1
+    end
+  end
+  inherited actions: TActionList
+    Left = 420
+    Top = 64
+  end
+end

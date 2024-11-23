@@ -1,0 +1,5 @@
+inherited frm0205: Tfrm0205
+  Left = 245
+  Top = 117
+  Caption = 'Registro 0205 - Alterações no Cadastro'
+end

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="MeuProgramaSPED"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+      <Item Name="Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="MeuProgramaSPED"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf3"/>
+              <UseHeaptrc Value="True"/>
+              <TrashVariables Value="True"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item>
+      <Item Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="MeuProgramaSPED"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <DebugInfoType Value="dsDwarf2Set"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="bgracontrols"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="MeuProgramaSPED.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.mainform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Forms.MainForm"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Forms.frmpadrao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPadrao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Forms.FrmPadrao"/>
+      </Unit>
+      <Unit>
+        <Filename Value="database.datamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="Database.Datamodule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.outros.modelo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Outros.Modelo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.outros.outrastabelas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Outros.OutrasTabelas"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.registros.modelo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Registros.Modelo"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frm0190.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm0190"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Registros.frm0190"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.Registros.frm0150.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm0150"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Registros.Frm0150"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frm0200.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm0200"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Registros.frm0200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frm0400.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frm0400"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Common.Functions.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frme115.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmE115"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.registros.frmE115"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.cadastros.frmoutros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmOutros"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Cadastros.FrmOutros"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frmc100.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmC100"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Registros.frmc100"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frmc170.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmC170"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Registros.frmc170"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.registros.frmh010.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmH010"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="forms.Registros.frmH010"/>
+      </Unit>
+      <Unit>
+        <Filename Value="forms.pesquisa.formpadrao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPesqPadrao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Forms.Pesquisa.FormPadrao"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.Reg0150.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Registros.Reg0150"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.Reg0190.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Registros.Reg0190"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.Reg0200.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Registros.Reg0200"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.Reg0400.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.RegH030.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.registros.RegH030"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.RegH010.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.registros.RegH010"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.RegE115.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Registros.RegE115"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.RegC170.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.Registros.RegC170"/>
+      </Unit>
+      <Unit>
+        <Filename Value="data.Registros.RegC100.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Data.registros.RegC100"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Common.Configuration.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="MeuProgramaSPED"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,289 @@
+inherited frm0200: Tfrm0200
+  Left = 240
+  Height = 357
+  Top = 104
+  Width = 1017
+  Caption = 'Registro 0200 - Produtos e Serviços'
+  ClientHeight = 357
+  ClientWidth = 1017
+  inherited Panel1: TPanel
+    Width = 1017
+    ClientWidth = 1017
+  end
+  inherited grpDados: TGroupBox
+    Height = 325
+    Width = 568
+    ClientHeight = 305
+    ClientWidth = 564
+    object Label1: TLabel[0]
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 22
+      Caption = 'Cod'
+      ParentColor = False
+    end
+    object edtCodItem: TEdit[1]
+      Left = 80
+      Height = 23
+      Top = 8
+      Width = 106
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edtDescrItem: TEdit[2]
+      Left = 187
+      Height = 23
+      Top = 8
+      Width = 373
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Label3: TLabel[3]
+      Left = 8
+      Height = 15
+      Top = 46
+      Width = 57
+      Caption = 'Cod Barras'
+      ParentColor = False
+    end
+    object edtCodBarra: TEdit[4]
+      Left = 80
+      Height = 23
+      Top = 46
+      Width = 201
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Label12: TLabel[5]
+      Left = 8
+      Height = 15
+      Top = 70
+      Width = 47
+      Caption = 'Cod Ant.'
+      ParentColor = False
+    end
+    object edtCodAntItem: TEdit[6]
+      Left = 80
+      Height = 23
+      Top = 70
+      Width = 201
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Label4: TLabel[7]
+      Left = 8
+      Height = 15
+      Top = 94
+      Width = 44
+      Caption = 'Unidade'
+      ParentColor = False
+    end
+    object edtUnidInv: TEdit[8]
+      Left = 80
+      Height = 23
+      Top = 94
+      Width = 106
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Label5: TLabel[9]
+      Left = 8
+      Height = 15
+      Top = 118
+      Width = 50
+      Caption = 'Tipo Item'
+      ParentColor = False
+    end
+    object edtTipoItem: TEdit[10]
+      Left = 80
+      Height = 23
+      Top = 118
+      Width = 480
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object Label6: TLabel[11]
+      Left = 8
+      Height = 15
+      Top = 142
+      Width = 28
+      Caption = 'NCM'
+      ParentColor = False
+    end
+    object edtCodNcm: TEdit[12]
+      Left = 80
+      Height = 23
+      Top = 142
+      Width = 106
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object Label7: TLabel[13]
+      Left = 8
+      Height = 15
+      Top = 166
+      Width = 29
+      Caption = 'EX IPI'
+      ParentColor = False
+    end
+    object edtExIpi: TEdit[14]
+      Left = 80
+      Height = 23
+      Top = 166
+      Width = 106
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Label8: TLabel[15]
+      Left = 8
+      Height = 15
+      Top = 190
+      Width = 38
+      Caption = 'Gênero'
+      ParentColor = False
+    end
+    object edtCodGen: TEdit[16]
+      Left = 80
+      Height = 23
+      Top = 190
+      Width = 106
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object edtCodGenNome: TEdit[17]
+      Left = 187
+      Height = 23
+      Top = 190
+      Width = 373
+      ReadOnly = True
+      TabOrder = 9
+    end
+    object Label9: TLabel[18]
+      Left = 8
+      Height = 15
+      Top = 214
+      Width = 15
+      Caption = 'Lst'
+      ParentColor = False
+    end
+    object edtCodLst: TEdit[19]
+      Left = 80
+      Height = 23
+      Top = 214
+      Width = 106
+      ReadOnly = True
+      TabOrder = 10
+    end
+    object Label10: TLabel[20]
+      Left = 8
+      Height = 15
+      Top = 238
+      Width = 52
+      Caption = 'Aliq ICMS'
+      ParentColor = False
+    end
+    object edtAliqIcms: TEdit[21]
+      Left = 80
+      Height = 23
+      Top = 238
+      Width = 106
+      ReadOnly = True
+      TabOrder = 11
+    end
+    object Label11: TLabel[22]
+      Left = 8
+      Height = 15
+      Top = 262
+      Width = 26
+      Caption = 'CEST'
+      ParentColor = False
+    end
+    object edtCest: TEdit[23]
+      Left = 80
+      Height = 23
+      Top = 262
+      Width = 106
+      ReadOnly = True
+      TabOrder = 12
+    end
+    object edtCestNome: TEdit[24]
+      Left = 187
+      Height = 23
+      Top = 262
+      Width = 373
+      ReadOnly = True
+      TabOrder = 13
+    end
+  end
+  object PageControl1: TPageControl[2]
+    Left = 576
+    Height = 325
+    Top = 32
+    Width = 441
+    ActivePage = TabSheet1
+    Align = alRight
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Alterações no Cadastro (0205)'
+      ClientHeight = 297
+      ClientWidth = 433
+      object grid0205: TDBGrid
+        Left = 0
+        Height = 297
+        Top = 0
+        Width = 433
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'DT_ALT'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'NR_CAMPO'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'CONT_ANT'
+            Width = 200
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Fator de Conversão (0220)'
+      ClientHeight = 297
+      ClientWidth = 433
+      object grid0220: TDBGrid
+        Left = 0
+        Height = 297
+        Top = 0
+        Width = 433
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'UNID_CONV'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'FAT_CONV'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'COD_BARRA'
+            Width = 200
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+  end
+  inherited actions: TActionList[3]
+    Left = 384
+    Top = 104
+  end
+end

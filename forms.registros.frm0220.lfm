@@ -1,0 +1,5 @@
+inherited frm0220: Tfrm0220
+  Left = 245
+  Top = 117
+  Caption = 'Registro 0220 - Fator de Conversão'
+end

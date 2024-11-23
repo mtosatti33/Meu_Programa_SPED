@@ -1,0 +1,80 @@
+inherited frmE115: TfrmE115
+  Left = 240
+  Height = 147
+  Top = 115
+  Width = 609
+  Caption = 'Registro E115 - Inf. Complementares - Valores Declaratórios'
+  ClientHeight = 147
+  ClientWidth = 609
+  inherited Panel1: TPanel
+    Height = 34
+    Width = 609
+    ClientHeight = 34
+    ClientWidth = 609
+  end
+  inherited grpDados: TGroupBox
+    Height = 113
+    Top = 34
+    Width = 609
+    Align = alClient
+    ClientHeight = 93
+    ClientWidth = 605
+    object Label2: TLabel[0]
+      Left = 8
+      Height = 15
+      Top = 0
+      Width = 44
+      Caption = 'Inf Adic.'
+    end
+    object edtCodInfAdic: TEdit[1]
+      Left = 80
+      Height = 23
+      Top = 0
+      Width = 120
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edtCodInfAdicDescr: TEdit[2]
+      Left = 201
+      Height = 23
+      Top = 0
+      Width = 336
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object Label4: TLabel[3]
+      Left = 8
+      Height = 15
+      Top = 24
+      Width = 27
+      Caption = 'Valor'
+    end
+    object edtVlInfAdic: TEdit[4]
+      Left = 80
+      Height = 23
+      Top = 24
+      Width = 120
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object Label5: TLabel[5]
+      Left = 8
+      Height = 15
+      Top = 48
+      Width = 68
+      Caption = 'Descr. Ajuste'
+    end
+    object edtDescrComplAj: TEdit[6]
+      Left = 80
+      Height = 23
+      Top = 48
+      Width = 120
+      ReadOnly = True
+      TabOrder = 3
+    end
+  end
+  inherited actions: TActionList
+    Left = 240
+    Top = 80
+  end
+end

@@ -1,0 +1,53 @@
+inherited frm0190: Tfrm0190
+  Left = 243
+  Height = 139
+  Top = 115
+  Width = 539
+  Caption = 'Registro 0190 - Unidades de Medida'
+  ClientHeight = 139
+  ClientWidth = 539
+  inherited Panel1: TPanel
+    Width = 539
+    ClientWidth = 539
+  end
+  inherited grpDados: TGroupBox
+    Height = 107
+    Width = 528
+    ClientHeight = 87
+    ClientWidth = 524
+    object Label2: TLabel[0]
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 28
+      Caption = 'Unid.'
+    end
+    object edtUnid: TEdit[1]
+      Left = 80
+      Height = 23
+      Top = 8
+      Width = 104
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object Label3: TLabel[2]
+      Left = 8
+      Height = 15
+      Top = 32
+      Width = 51
+      Caption = 'Descrição'
+    end
+    object edtDesc: TEdit[3]
+      Left = 80
+      Height = 23
+      Top = 32
+      Width = 432
+      ReadOnly = True
+      TabOrder = 1
+    end
+  end
+  inherited actions: TActionList
+    Left = 348
+    Top = 52
+  end
+end

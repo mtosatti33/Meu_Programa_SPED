@@ -1,0 +1,889 @@
+inherited frmC100: TfrmC100
+  Left = 242
+  Height = 613
+  Top = 102
+  Width = 971
+  Action = actSair
+  ClientHeight = 613
+  ClientWidth = 971
+  Visible = True
+  inherited Panel1: TPanel
+    Width = 971
+    ClientWidth = 971
+    object SpeedButton2: TSpeedButton[3]
+      Left = 88
+      Height = 30
+      Top = 1
+      Width = 80
+      Action = actItens
+    end
+  end
+  inherited grpDados: TGroupBox
+    Height = 160
+    Width = 971
+    Align = alTop
+    ClientHeight = 140
+    ClientWidth = 967
+    object GroupBox1: TGroupBox[0]
+      Left = 16
+      Height = 128
+      Top = 0
+      Width = 941
+      Caption = 'Cabeçalho'
+      ClientHeight = 108
+      ClientWidth = 937
+      TabOrder = 0
+      object Label8: TLabel
+        Left = 16
+        Height = 15
+        Top = 0
+        Width = 63
+        Caption = 'Documento'
+        ParentColor = False
+      end
+      object edtNumDoc: TEdit
+        Left = 89
+        Height = 23
+        Top = 0
+        Width = 80
+        AutoSize = False
+        TabOrder = 0
+      end
+      object Label7: TLabel
+        Left = 176
+        Height = 15
+        Top = 0
+        Width = 25
+        Caption = 'Série'
+        ParentColor = False
+      end
+      object edtSer: TEdit
+        Left = 247
+        Height = 23
+        Top = 0
+        Width = 80
+        ReadOnly = True
+        TabOrder = 1
+      end
+      object Label9: TLabel
+        Left = 337
+        Height = 15
+        Top = 0
+        Width = 64
+        Caption = 'Chv. Acesso'
+        ParentColor = False
+      end
+      object edtChvNfe: TEdit
+        Left = 409
+        Height = 23
+        Top = 0
+        Width = 517
+        TabOrder = 2
+      end
+      object Label10: TLabel
+        Left = 16
+        Height = 15
+        Top = 24
+        Width = 61
+        Caption = 'Dt. Emissão'
+        ParentColor = False
+      end
+      object edtDtDoc: TEdit
+        Left = 89
+        Height = 23
+        Top = 24
+        Width = 80
+        ReadOnly = True
+        TabOrder = 3
+      end
+      object Label11: TLabel
+        Left = 176
+        Height = 15
+        Top = 24
+        Width = 35
+        Caption = 'Dt. E/S'
+        ParentColor = False
+      end
+      object edtDtES: TEdit
+        Left = 247
+        Height = 23
+        Top = 24
+        Width = 80
+        ReadOnly = True
+        TabOrder = 4
+      end
+      object Label4: TLabel
+        Left = 337
+        Height = 15
+        Top = 24
+        Width = 63
+        Caption = 'Participante'
+        ParentColor = False
+      end
+      object edtCodPart: TEdit
+        Left = 409
+        Height = 23
+        Top = 24
+        Width = 80
+        ReadOnly = True
+        TabOrder = 5
+      end
+      object edtCodPartNome: TEdit
+        Left = 490
+        Height = 23
+        Top = 24
+        Width = 410
+        ReadOnly = True
+        TabOrder = 6
+      end
+      object SpeedButton3: TSpeedButton
+        Left = 904
+        Height = 22
+        Top = 24
+        Width = 22
+        Action = actInformacoes
+        Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000064000000640000000000000000000000000000000000
+          000000000000000000001D1D232B201E238E1F1F24D31F1F23F31F1F23F31F1F
+          24D3201E248D1E1E242A00000000000000000000000000000000000000000000
+          00002A2A2A061F1F2493201F24FC201E23D61F1F23881F1F25601F1F25601F1F
+          2389201E23D7201F24FC1F1F2391333333050000000000000000000000002A2A
+          2A06201F24BC1F1E23F11E1E245B000000010000000000000000000000000000
+          000000000002201E235D1F1E23F11F1F23BB333333050000000000000000201F
+          24941F1E23F1221C222D00000000000000000000000000000000000000000000
+          000000000000000000002121212E1F1E23F11F1F239100000000221C222C201F
+          24FC1F1F245A0000000000000000000000002A152A0C201F23D5201E236D0000
+          0000000000000000000000000000201E235D201F24FC1E1E242A1F1F2390201E
+          23D6000000010000000000000000000000002727270D201E24B71F1F25590000
+          000000000000000000000000000000000002201E23D7201E238E201F23D5201E
+          24850000000000000000000000000000000000000000211E25441D1D271A0000
+          000000000000000000000000000000000000201E23871F1F24D31F1E23F21F1F
+          24610000000000000000000000000000000000000000201F23E61F1E23980000
+          0000000000000000000000000000000000001E1E24631F1E23F11F1F23F31F1F
+          25600000000000000000000000000000000000000000211D244D1F1E23F8201E
+          238E000000010000000000000000000000001F1F24621F1E23F2201F23D5201E
+          24850000000000000000000000000000000000000000000000001F1F2251201F
+          24FF1E1E2243000000000000000000000000201E23871F1F24D31F1F2390201F
+          23D50000000100000000000000001C1C2A12201E24AE20202567201E248D201F
+          24FF2020234F000000000000000000000001201E23D6201E238E221C222D201F
+          24FD1F1F255900000000000000001D1D24231F1F24AA1F1E24E01F1F23E3201E
+          238E000000020000000000000000211E245C201F24FC1D1D232B00000000201E
+          23971F1E24F0221C222C00000000000000000000000000000000000000000000
+          00000000000000000000221C222D1F1E23F11F1F249300000000000000002424
+          2407201E24BE1F1E24F01F1F2559000000010000000000000000000000000000
+          0000000000011F1F245A1F1E23F1201F24BD2A2A2A0600000000000000000000
+          000024242407201E2396201F24FD201F23D5201E24861F1F25601F1F2560201E
+          2486201E23D6201F24FC201F24942A2A2A060000000000000000000000000000
+          00000000000000000000221C222D1F1F2391201F24D4201F23F4201F23F4201F
+          24D41F1F2390221C222C00000000000000000000000000000000
+        }
+        ShowHint = True
+        ParentShowHint = False
+      end
+      object Label1: TLabel
+        Left = 16
+        Height = 15
+        Top = 48
+        Width = 49
+        Caption = 'Ind Oper.'
+        ParentColor = False
+      end
+      object edtIndOper: TEdit
+        Left = 89
+        Height = 23
+        Top = 48
+        Width = 128
+        ReadOnly = True
+        TabOrder = 7
+      end
+      object Label6: TLabel
+        Left = 16
+        Height = 15
+        Top = 72
+        Width = 45
+        Caption = 'Situação'
+        ParentColor = False
+      end
+      object edtCodSit: TEdit
+        Left = 89
+        Height = 23
+        Top = 72
+        Width = 80
+        ReadOnly = True
+        TabOrder = 8
+      end
+      object edtCodSitNome: TEdit
+        Left = 170
+        Height = 23
+        Top = 72
+        Width = 352
+        ReadOnly = True
+        TabOrder = 9
+      end
+      object Label3: TLabel
+        Left = 220
+        Height = 15
+        Top = 48
+        Width = 47
+        Caption = 'Ind Emit.'
+        ParentColor = False
+      end
+      object edtIntEmit: TEdit
+        Left = 281
+        Height = 23
+        Top = 48
+        Width = 119
+        ReadOnly = True
+        TabOrder = 10
+      end
+      object Label5: TLabel
+        Left = 425
+        Height = 15
+        Top = 48
+        Width = 41
+        Caption = 'Modelo'
+        ParentColor = False
+      end
+      object edtCodMod: TEdit
+        Left = 497
+        Height = 23
+        Top = 48
+        Width = 80
+        ReadOnly = True
+        TabOrder = 11
+      end
+      object edtCodModNome: TEdit
+        Left = 578
+        Height = 23
+        Top = 48
+        Width = 349
+        ReadOnly = True
+        TabOrder = 12
+      end
+    end
+  end
+  object PageControl1: TPageControl[2]
+    Left = 0
+    Height = 413
+    Top = 200
+    Width = 971
+    ActivePage = TabSheet6
+    Align = alBottom
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet6: TTabSheet
+      Caption = 'Valores e Impostos'
+      ClientHeight = 385
+      ClientWidth = 963
+      object GroupBox3: TGroupBox
+        Left = 8
+        Height = 208
+        Top = 8
+        Width = 205
+        Caption = 'Valores'
+        ClientHeight = 188
+        ClientWidth = 201
+        TabOrder = 0
+        object Label12: TLabel
+          Left = 8
+          Height = 15
+          Top = 8
+          Width = 31
+          Caption = 'VL NF'
+          ParentColor = False
+        end
+        object edtVlDoc: TEdit
+          Left = 79
+          Height = 23
+          Top = 8
+          Width = 113
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object Label14: TLabel
+          Left = 8
+          Height = 15
+          Top = 56
+          Width = 41
+          Caption = 'VL Desc'
+          ParentColor = False
+        end
+        object edtVlDesc: TEdit
+          Left = 79
+          Height = 23
+          Top = 56
+          Width = 113
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object Label17: TLabel
+          Left = 8
+          Height = 15
+          Top = 80
+          Width = 41
+          Caption = 'VL Abat'
+          ParentColor = False
+        end
+        object edtVlAbatNt1: TEdit
+          Left = 79
+          Height = 23
+          Top = 80
+          Width = 113
+          ReadOnly = True
+          TabOrder = 3
+        end
+        object Label16: TLabel
+          Left = 8
+          Height = 15
+          Top = 104
+          Width = 40
+          Caption = 'Vl Merc'
+          ParentColor = False
+        end
+        object edtVlMerc: TEdit
+          Left = 79
+          Height = 23
+          Top = 104
+          Width = 113
+          ReadOnly = True
+          TabOrder = 4
+        end
+        object Label19: TLabel
+          Left = 8
+          Height = 15
+          Top = 128
+          Width = 53
+          Caption = 'VL Seguro'
+          ParentColor = False
+        end
+        object edtVlSeg: TEdit
+          Left = 79
+          Height = 23
+          Top = 128
+          Width = 113
+          ReadOnly = True
+          TabOrder = 5
+        end
+        object Label20: TLabel
+          Left = 8
+          Height = 15
+          Top = 152
+          Width = 51
+          Caption = 'VL Outras'
+          ParentColor = False
+        end
+        object edtVlOutDa: TEdit
+          Left = 79
+          Height = 23
+          Top = 152
+          Width = 113
+          ReadOnly = True
+          TabOrder = 6
+        end
+        object Label13: TLabel
+          Left = 8
+          Height = 15
+          Top = 32
+          Width = 51
+          Caption = 'Ind. Pgto.'
+          ParentColor = False
+        end
+        object edtIndPgto: TEdit
+          Left = 79
+          Height = 23
+          Top = 32
+          Width = 113
+          ReadOnly = True
+          TabOrder = 1
+        end
+      end
+      object GroupBox4: TGroupBox
+        Left = 216
+        Height = 208
+        Top = 8
+        Width = 341
+        Caption = 'Impostos'
+        ClientHeight = 188
+        ClientWidth = 337
+        TabOrder = 1
+        object Label21: TLabel
+          Left = 8
+          Height = 15
+          Top = 8
+          Width = 46
+          Caption = 'BC ICMS'
+          ParentColor = False
+        end
+        object edtVlBcIcms: TEdit
+          Left = 84
+          Height = 23
+          Top = 8
+          Width = 80
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object edtVlIcms: TEdit
+          Left = 248
+          Height = 23
+          Top = 8
+          Width = 80
+          ReadOnly = True
+          TabOrder = 1
+        end
+        object Label22: TLabel
+          Left = 172
+          Height = 15
+          Top = 8
+          Width = 45
+          Caption = 'Vlr ICMS'
+          ParentColor = False
+        end
+        object edtVlBcIcmsSt: TEdit
+          Left = 84
+          Height = 23
+          Top = 32
+          Width = 80
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object edtVlIcmsSt: TEdit
+          Left = 248
+          Height = 23
+          Top = 32
+          Width = 80
+          ReadOnly = True
+          TabOrder = 3
+        end
+        object Label23: TLabel
+          Left = 8
+          Height = 15
+          Top = 32
+          Width = 61
+          Caption = 'BC ICMS ST'
+          ParentColor = False
+        end
+        object Label24: TLabel
+          Left = 172
+          Height = 15
+          Top = 32
+          Width = 60
+          Caption = 'Vlr ICMS ST'
+          ParentColor = False
+        end
+        object edtVlIpi: TEdit
+          Left = 84
+          Height = 23
+          Top = 56
+          Width = 80
+          ReadOnly = True
+          TabOrder = 4
+        end
+        object Label25: TLabel
+          Left = 8
+          Height = 15
+          Top = 56
+          Width = 13
+          Caption = 'IPI'
+          ParentColor = False
+        end
+        object edtVlPis: TEdit
+          Left = 84
+          Height = 23
+          Top = 80
+          Width = 80
+          ReadOnly = True
+          TabOrder = 5
+        end
+        object edtVlCofins: TEdit
+          Left = 84
+          Height = 23
+          Top = 104
+          Width = 80
+          ReadOnly = True
+          TabOrder = 7
+        end
+        object edtVlPisSt: TEdit
+          Left = 248
+          Height = 23
+          Top = 80
+          Width = 80
+          ReadOnly = True
+          TabOrder = 6
+        end
+        object edtVlCofinsSt: TEdit
+          Left = 248
+          Height = 23
+          Top = 104
+          Width = 80
+          ReadOnly = True
+          TabOrder = 8
+        end
+        object Label26: TLabel
+          Left = 8
+          Height = 15
+          Top = 80
+          Width = 16
+          Caption = 'PIS'
+          ParentColor = False
+        end
+        object Label28: TLabel
+          Left = 172
+          Height = 15
+          Top = 80
+          Width = 31
+          Caption = 'PIS ST'
+          ParentColor = False
+        end
+        object Label29: TLabel
+          Left = 172
+          Height = 15
+          Top = 104
+          Width = 56
+          Caption = 'COFINS ST'
+          ParentColor = False
+        end
+        object Label27: TLabel
+          Left = 8
+          Height = 15
+          Top = 104
+          Width = 41
+          Caption = 'COFINS'
+          ParentColor = False
+        end
+      end
+      object GroupBox2: TGroupBox
+        Left = 8
+        Height = 88
+        Top = 216
+        Width = 549
+        Caption = 'Frete'
+        ClientHeight = 68
+        ClientWidth = 545
+        TabOrder = 2
+        object Label30: TLabel
+          Left = 16
+          Height = 15
+          Top = 8
+          Width = 50
+          Caption = 'Indicador'
+          ParentColor = False
+        end
+        object edtIndFrt1: TEdit
+          Left = 72
+          Height = 23
+          Top = 8
+          Width = 297
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object Label31: TLabel
+          Left = 16
+          Height = 15
+          Top = 32
+          Width = 26
+          Caption = 'Valor'
+          ParentColor = False
+        end
+        object edtVlFrt1: TEdit
+          Left = 72
+          Height = 23
+          Top = 32
+          Width = 80
+          ReadOnly = True
+          TabOrder = 1
+        end
+      end
+    end
+    object TabSheet1: TTabSheet
+      Caption = 'Doc Arrec. (C112)'
+      ClientHeight = 385
+      ClientWidth = 963
+      object gridC112: TDBGrid
+        Left = 0
+        Height = 385
+        Top = 0
+        Width = 963
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'COD_DA'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'UF'
+            Width = 40
+          end        
+          item
+            Title.Caption = 'NUM_DA'
+            Width = 200
+          end        
+          item
+            Title.Caption = 'COD_AUT'
+          end        
+          item
+            Title.Caption = 'VL_DA'
+          end        
+          item
+            Title.Caption = 'DT_VCTO'
+          end        
+          item
+            Title.Caption = 'DT_PGTO'
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Documento Referenciado (C113)'
+      ClientHeight = 385
+      ClientWidth = 963
+      object gridC113: TDBGrid
+        Left = 0
+        Height = 385
+        Top = 0
+        Width = 963
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'IND_OPER'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'IND_EMIT'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'COD_PART'
+            Width = 200
+          end        
+          item
+            Title.Caption = 'COD_MOD'
+          end        
+          item
+            Title.Caption = 'SER'
+          end        
+          item
+            Title.Caption = 'SUB'
+          end        
+          item
+            Title.Caption = 'NUM_DOC'
+          end        
+          item
+            Title.Caption = 'DT_DOC'
+          end        
+          item
+            Title.Caption = 'CHV_DOC'
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Operações Saída por ST (C185)'
+      ClientHeight = 385
+      ClientWidth = 963
+      object gridC185: TDBGrid
+        Left = 0
+        Height = 385
+        Top = 0
+        Width = 963
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'NUM_ITEM'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'COD_ITEM'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'CST_ICMS'
+            Width = 200
+          end        
+          item
+            Title.Caption = 'CFOP'
+          end        
+          item
+            Title.Caption = 'COD_MOT_REST_COMPL'
+          end        
+          item
+            Title.Caption = 'QUANT_CONV'
+          end        
+          item
+            Title.Caption = 'UNID'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_CONV'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_NA_OPERACAO_CONV'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_OP_ESTOQUE_CONV'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_ST_ESTOQUE_CONV'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_ST_CONV_REST'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_FCP_ST_CONV_REST'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_ST_CONV_COMPL'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_FCP_ST_CONV_'
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Operações Dev Entrada por ST (C186)'
+      ClientHeight = 385
+      ClientWidth = 963
+      object gridC186: TDBGrid
+        Left = 0
+        Height = 385
+        Top = 0
+        Width = 963
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'NUM_ITEM'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'COD_ITEM'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'CST_ICMS'
+            Width = 200
+          end        
+          item
+            Title.Caption = 'CFOP'
+          end        
+          item
+            Title.Caption = 'COD_MOT_REST_COMPL'
+          end        
+          item
+            Title.Caption = 'QUANT_CONV'
+          end        
+          item
+            Title.Caption = 'UNID'
+          end        
+          item
+            Title.Caption = 'COD_MOD_ENTRADA'
+          end        
+          item
+            Title.Caption = 'SERIE_ENTRADA'
+          end        
+          item
+            Title.Caption = 'NUM_DOC_ENTRADA'
+          end        
+          item
+            Title.Caption = 'CHV_DFE_ENTRADA'
+          end        
+          item
+            Title.Caption = 'DT_DOC_ENTRADA'
+          end        
+          item
+            Title.Caption = 'NUM_ITEM_ENTRADA'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_CONV_ENTRADA'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_OP_CONV_'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_BC_ICMS_ST'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_ICMS_ST_CONV_ENTRADA'
+          end        
+          item
+            Title.Caption = 'VL_UNIT_FCP_ST_CONV_ENTRADA'
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Analitico (C190)'
+      ClientHeight = 385
+      ClientWidth = 963
+      object gridC190: TDBGrid
+        Left = 0
+        Height = 385
+        Top = 0
+        Width = 963
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'CST_ICMS'
+            Width = 96
+          end        
+          item
+            Title.Caption = 'CFOP'
+            Width = 70
+          end        
+          item
+            Title.Caption = 'ALIQ_ICMS'
+            Width = 200
+          end        
+          item
+            Title.Caption = 'VL_OPR'
+          end        
+          item
+            Title.Caption = 'VL_BC_ICMS'
+          end        
+          item
+            Title.Caption = 'VL_ICMS'
+          end        
+          item
+            Title.Caption = 'VL_BC_ICMS_ST'
+          end        
+          item
+            Title.Caption = 'VL_ICMS_ST'
+          end        
+          item
+            Title.Caption = 'VL_RED_BC'
+          end        
+          item
+            Title.Caption = 'VL_IPI'
+          end        
+          item
+            Title.Caption = 'COD_OBS'
+          end>
+        TabOrder = 0
+        TitleStyle = tsNative
+      end
+    end
+  end
+  inherited actions: TActionList[3]
+    Left = 280
+    Top = 304
+    object actItens: TAction[2]
+      Caption = 'Itens (C170)'
+      OnExecute = actItensExecute
+    end
+    inherited actInformacoes: TAction[3]
+    end
+    inherited actAbrirPesquisa: TAction[4]
+    end
+  end
+end

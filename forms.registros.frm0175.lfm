@@ -1,0 +1,5 @@
+inherited frm0175: Tfrm0175
+  Left = 243
+  Top = 115
+  Caption = 'Registro 0175 - Alteração no Cadastro'
+end

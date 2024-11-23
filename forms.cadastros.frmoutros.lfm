@@ -1,0 +1,126 @@
+inherited frmOutros: TfrmOutros
+  Left = 242
+  Height = 654
+  Top = 116
+  Width = 903
+  Caption = 'Outras Consultas'
+  ClientHeight = 654
+  ClientWidth = 903
+  inherited Panel1: TPanel
+    Width = 903
+    ClientWidth = 903
+  end
+  inherited grpDados: TGroupBox
+    Left = 249
+    Height = 622
+    Width = 654
+    Align = alClient
+    ClientHeight = 602
+    ClientWidth = 650
+    TabOrder = 2
+    object Label2: TLabel[0]
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 25
+      Caption = 'Cód.'
+      ParentColor = False
+    end
+    object Label3: TLabel[1]
+      Left = 8
+      Height = 15
+      Top = 40
+      Width = 51
+      Caption = 'Descrição'
+      ParentColor = False
+    end
+    object Label4: TLabel[2]
+      Left = 8
+      Height = 15
+      Top = 72
+      Width = 47
+      Caption = 'Dt. Início'
+      ParentColor = False
+    end
+    object Label5: TLabel[3]
+      Left = 8
+      Height = 15
+      Top = 104
+      Width = 38
+      Caption = 'Dt. Fim'
+      ParentColor = False
+    end
+    object edtDtFim: TEdit[4]
+      Left = 80
+      Height = 23
+      Top = 104
+      Width = 104
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edtDtInicio: TEdit[5]
+      Left = 80
+      Height = 23
+      Top = 72
+      Width = 104
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object edtDescricao: TEdit[6]
+      Left = 80
+      Height = 23
+      Top = 40
+      Width = 432
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object edtID: TEdit[7]
+      Left = 80
+      Height = 23
+      Top = 8
+      Width = 104
+      ReadOnly = True
+      TabOrder = 3
+    end
+  end
+  object tvConsultas: TTreeView[2]
+    Left = 0
+    Height = 622
+    Top = 32
+    Width = 249
+    Align = alLeft
+    ReadOnly = True
+    TabOrder = 1
+    OnClick = tvConsultasClick
+    Options = [tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+    Items.Data = {
+      F9FFFFFF020008000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF030000000000
+      0000010B0000004C6F63616C696461646573FFFFFFFFFFFFFFFF00000000FFFF
+      FFFF000000000000000000070000005061C3AD736573FFFFFFFFFFFFFFFF0100
+      0000FFFFFFFF00000000000000000017000000556E6964616465732064612046
+      6564657261C3A7C3A36FFFFFFFFFFFFFFFFF02000000FFFFFFFF000000000000
+      0000000700000043696461646573FFFFFFFFFFFFFFFF03000000FFFFFFFF0000
+      000000000000000400000043455354FFFFFFFFFFFFFFFF04000000FFFFFFFF00
+      00000000000000000400000043464F50FFFFFFFFFFFFFFFF05000000FFFFFFFF
+      0000000000000000000800000047C3AA6E65726F73FFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFF04000000000000000103000000435354FFFFFFFFFFFFFFFF060000
+      00FFFFFFFF00000000000000000013000000546162656C6120342E332E31202D
+      2049434D53FFFFFFFFFFFFFFFF07000000FFFFFFFF0000000000000000001200
+      0000546162656C6120342E332E32202D20495049FFFFFFFFFFFFFFFF08000000
+      FFFFFFFF00000000000000000003000000504953FFFFFFFFFFFFFFFF09000000
+      FFFFFFFF00000000000000000006000000434F46494E53FFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFF0100000000000000010C00000043C3B36469676F7320474941
+      FFFFFFFFFFFFFFFF0A000000FFFFFFFF00000000000000000023000000546162
+      656C6120352E32202D2056616C6F726573204465636C61726174C3B372696F73
+      FFFFFFFFFFFFFFFF0B000000FFFFFFFF00000000000000000025000000546162
+      656C6120352E37202D204D6F7469766F73206465205265737469747569C3A7C3
+      A36FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0200000000000000010900000054
+      C3A9636E69636173FFFFFFFFFFFFFFFF0C000000FFFFFFFF0000000000000000
+      0016000000546162656C6120342E312E31202D204D6F64656C6F73FFFFFFFFFF
+      FFFFFF0D000000FFFFFFFF0000000000000000001D000000546162656C612034
+      2E312E32202D205369747561C3A7C3B56573204E46
+    }
+  end
+  inherited actions: TActionList[3]
+  end
+end

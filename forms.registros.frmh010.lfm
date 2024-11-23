@@ -1,0 +1,339 @@
+inherited frmH010: TfrmH010
+  Left = 238
+  Height = 340
+  Top = 116
+  Width = 658
+  Caption = 'Registro H010 - Inventário'
+  ClientHeight = 340
+  ClientWidth = 658
+  inherited Panel1: TPanel
+    Width = 658
+    ClientWidth = 658
+  end
+  inherited grpDados: TGroupBox
+    Height = 308
+    Width = 658
+    Align = alClient
+    ClientHeight = 288
+    ClientWidth = 654
+    object Label10: TLabel[0]
+      Left = 16
+      Height = 15
+      Top = 8
+      Width = 43
+      Caption = 'Produto'
+    end
+    object edtCodItem: TEdit[1]
+      Left = 87
+      Height = 23
+      Top = 8
+      Width = 80
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object edtCodItemDescr: TEdit[2]
+      Left = 168
+      Height = 23
+      Top = 8
+      Width = 447
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object SpeedButton3: TSpeedButton[3]
+      Left = 616
+      Height = 22
+      Top = 8
+      Width = 22
+      Action = actInformacoes
+      Glyph.Data = {
+        36040000424D3604000000000000360000002800000010000000100000000100
+        2000000000000004000064000000640000000000000000000000000000000000
+        000000000000000000001D1D232B201E238E1F1F24D31F1F23F31F1F23F31F1F
+        24D3201E248D1E1E242A00000000000000000000000000000000000000000000
+        00002A2A2A061F1F2493201F24FC201E23D61F1F23881F1F25601F1F25601F1F
+        2389201E23D7201F24FC1F1F2391333333050000000000000000000000002A2A
+        2A06201F24BC1F1E23F11E1E245B000000010000000000000000000000000000
+        000000000002201E235D1F1E23F11F1F23BB333333050000000000000000201F
+        24941F1E23F1221C222D00000000000000000000000000000000000000000000
+        000000000000000000002121212E1F1E23F11F1F239100000000221C222C201F
+        24FC1F1F245A0000000000000000000000002A152A0C201F23D5201E236D0000
+        0000000000000000000000000000201E235D201F24FC1E1E242A1F1F2390201E
+        23D6000000010000000000000000000000002727270D201E24B71F1F25590000
+        000000000000000000000000000000000002201E23D7201E238E201F23D5201E
+        24850000000000000000000000000000000000000000211E25441D1D271A0000
+        000000000000000000000000000000000000201E23871F1F24D31F1E23F21F1F
+        24610000000000000000000000000000000000000000201F23E61F1E23980000
+        0000000000000000000000000000000000001E1E24631F1E23F11F1F23F31F1F
+        25600000000000000000000000000000000000000000211D244D1F1E23F8201E
+        238E000000010000000000000000000000001F1F24621F1E23F2201F23D5201E
+        24850000000000000000000000000000000000000000000000001F1F2251201F
+        24FF1E1E2243000000000000000000000000201E23871F1F24D31F1F2390201F
+        23D50000000100000000000000001C1C2A12201E24AE20202567201E248D201F
+        24FF2020234F000000000000000000000001201E23D6201E238E221C222D201F
+        24FD1F1F255900000000000000001D1D24231F1F24AA1F1E24E01F1F23E3201E
+        238E000000020000000000000000211E245C201F24FC1D1D232B00000000201E
+        23971F1E24F0221C222C00000000000000000000000000000000000000000000
+        00000000000000000000221C222D1F1E23F11F1F249300000000000000002424
+        2407201E24BE1F1E24F01F1F2559000000010000000000000000000000000000
+        0000000000011F1F245A1F1E23F1201F24BD2A2A2A0600000000000000000000
+        000024242407201E2396201F24FD201F23D5201E24861F1F25601F1F2560201E
+        2486201E23D6201F24FC201F24942A2A2A060000000000000000000000000000
+        00000000000000000000221C222D1F1F2391201F24D4201F23F4201F23F4201F
+        24D41F1F2390221C222C00000000000000000000000000000000
+      }
+      ShowHint = True
+      ParentShowHint = False
+    end
+    object Label11: TLabel[4]
+      Left = 16
+      Height = 15
+      Top = 32
+      Width = 26
+      Caption = 'Qtde'
+    end
+    object Label14: TLabel[5]
+      Left = 16
+      Height = 15
+      Top = 56
+      Width = 48
+      Caption = 'Ind Prop.'
+    end
+    object Label24: TLabel[6]
+      Left = 16
+      Height = 15
+      Top = 80
+      Width = 46
+      Caption = 'Cod Cta.'
+    end
+    object edtQtd: TEdit[7]
+      Left = 87
+      Height = 23
+      Top = 32
+      Width = 80
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object edtUnid: TEdit[8]
+      Left = 168
+      Height = 23
+      Top = 32
+      Width = 32
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Label12: TLabel[9]
+      Left = 216
+      Height = 15
+      Top = 32
+      Width = 39
+      Caption = 'Vlr Unit'
+    end
+    object edtVlUnit: TEdit[10]
+      Left = 287
+      Height = 23
+      Top = 32
+      Width = 80
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object Label13: TLabel[11]
+      Left = 376
+      Height = 15
+      Top = 32
+      Width = 41
+      Caption = 'Vlr Item'
+    end
+    object edtVlItem: TEdit[12]
+      Left = 448
+      Height = 23
+      Top = 32
+      Width = 80
+      ReadOnly = True
+      TabOrder = 5
+    end
+    object edtIndProp: TEdit[13]
+      Left = 87
+      Height = 23
+      Top = 56
+      Width = 80
+      ReadOnly = True
+      TabOrder = 6
+    end
+    object edtCodCta: TEdit[14]
+      Left = 87
+      Height = 23
+      Top = 80
+      Width = 80
+      ReadOnly = True
+      TabOrder = 7
+    end
+    object Label15: TLabel[15]
+      Left = 216
+      Height = 15
+      Top = 56
+      Width = 46
+      Caption = 'Cod Part'
+    end
+    object Label25: TLabel[16]
+      Left = 216
+      Height = 15
+      Top = 80
+      Width = 54
+      Caption = 'Vlr Item IR'
+    end
+    object edtCodPart: TEdit[17]
+      Left = 287
+      Height = 23
+      Top = 56
+      Width = 80
+      ReadOnly = True
+      TabOrder = 8
+    end
+    object edtVlItemIR: TEdit[18]
+      Left = 287
+      Height = 23
+      Top = 80
+      Width = 80
+      ReadOnly = True
+      TabOrder = 9
+    end
+    object Label16: TLabel[19]
+      Left = 376
+      Height = 15
+      Top = 56
+      Width = 58
+      Caption = 'Txt Compl.'
+    end
+    object edtTxtCompl: TEdit[20]
+      Left = 448
+      Height = 23
+      Top = 56
+      Width = 80
+      ReadOnly = True
+      TabOrder = 10
+    end
+    object Label1: TLabel[21]
+      Left = 7
+      Height = 15
+      Top = 128
+      Width = 482
+      Caption = 'Inf Complementares do Inventário das Mercadorias Sujeitas a Substituição Tributária (H030)'
+    end
+    object Shape1: TShape[22]
+      Left = 7
+      Height = 1
+      Top = 144
+      Width = 625
+    end
+    object Label17: TLabel[23]
+      Left = 16
+      Height = 15
+      Top = 152
+      Width = 59
+      Caption = 'ICMS Prop.'
+    end
+    object Label18: TLabel[24]
+      Left = 16
+      Height = 15
+      Top = 176
+      Width = 62
+      Caption = 'BC ICMS ST'
+    end
+    object Label19: TLabel[25]
+      Left = 16
+      Height = 15
+      Top = 200
+      Width = 61
+      Caption = 'Vlr ICMS ST'
+    end
+    object edtVlIcmsOp: TEdit[26]
+      Left = 87
+      Height = 23
+      Top = 152
+      Width = 80
+      ReadOnly = True
+      TabOrder = 11
+    end
+    object edtVlBcIcmsSt: TEdit[27]
+      Left = 87
+      Height = 23
+      Top = 176
+      Width = 80
+      ReadOnly = True
+      TabOrder = 12
+    end
+    object edtVlIcmsSt: TEdit[28]
+      Left = 87
+      Height = 23
+      Top = 200
+      Width = 80
+      ReadOnly = True
+      TabOrder = 13
+    end
+    object Label20: TLabel[29]
+      Left = 216
+      Height = 15
+      Top = 152
+      Width = 21
+      Caption = 'FCP'
+    end
+    object Label22: TLabel[30]
+      Left = 216
+      Height = 15
+      Top = 176
+      Width = 50
+      Caption = 'Aliq Calc.'
+    end
+    object Label23: TLabel[31]
+      Left = 216
+      Height = 15
+      Top = 200
+      Width = 45
+      Caption = 'Aliq Cad'
+    end
+    object edtVlFcp: TEdit[32]
+      Left = 287
+      Height = 23
+      Top = 152
+      Width = 80
+      ReadOnly = True
+      TabOrder = 14
+    end
+    object edtAliqCalc: TEdit[33]
+      Left = 287
+      Height = 23
+      Top = 176
+      Width = 80
+      ReadOnly = True
+      TabOrder = 15
+    end
+    object edtAliqCad: TEdit[34]
+      Left = 287
+      Height = 23
+      Top = 200
+      Width = 80
+      ReadOnly = True
+      TabOrder = 16
+    end
+    object Label21: TLabel[35]
+      Left = 23
+      Height = 15
+      Top = 251
+      Width = 29
+      Anchors = [akLeft, akBottom]
+      Caption = 'Linha'
+    end
+    object edtLinha: TEdit[36]
+      Left = 87
+      Height = 23
+      Top = 251
+      Width = 80
+      Anchors = [akLeft, akBottom]
+      TabOrder = 17
+    end
+  end
+  inherited actions: TActionList
+    Left = 540
+    Top = 244
+  end
+end
